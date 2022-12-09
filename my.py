@@ -95,19 +95,19 @@
 
 # 6
 
-n1 = '123aaa1234'
-n2 = 'aa'
-i = 0
-count = 0
-while i < len(n1):
-   sr = n1[i : i + len(n2)]
-   print(sr)
-   if sr == n2:
-      count += 1
-      i += len(n2)
-   else:
-      i += 2
-print(count)
+# n1 = '123aaa1234'
+# n2 = 'aa'
+# i = 0
+# count = 0
+# while i < len(n1):
+#    sr = n1[i : i + len(n2)]
+#    print(sr)
+#    if sr == n2:
+#       count += 1
+#       i += len(n2)
+#    else:
+#       i += 2
+# print(count)
 
 # 7
 
@@ -133,3 +133,161 @@ print(count)
 #    sp.append(n)
 
 # print(sum(sp)/len(sp))
+
+# 3 seminar
+# list = [1,2,3,3,3,4,5,6,7,8,8,8]
+# newList = []
+# for i in list:
+#    if list.count(i) ==1:
+#       newList.append(i)
+
+# print(*newList)
+
+# 2
+# list = [1, 5, 2, 4, 3]
+# new_list = []
+# for i in range(len(list)-1):
+#    if list[i] < list[i+1]:
+#          new_list.append(list[i+1])
+
+# print(*new_list)
+#3
+# import time
+# def random(n):
+#    str_time = str(time.time())
+#    str_time = str_time.replace('.','')
+#    number = int(str_time) % n
+#    return number
+
+# print(random(1000))
+
+#4
+# list = []
+# number = 12
+# for i in range(5):
+#    list.append(input())
+
+# print(list)
+# for i in range(5):
+#    if str(number) in list[i]:
+#       print("Yes")
+#    else:
+#       continue
+
+# list = []
+# for i in range(5):
+#    list.append(input())
+# if any('12' in el for el in list ):
+#    print("yes")
+
+# print(list)
+
+#5
+# list = ['qwe','asd', 'zxs', 'ertqwe']
+# n = 'qwe'
+# s = 0
+# count = 0
+# for i in range(len(list)):
+#    if list[i] == n :
+#       count+=1
+
+#       if (count == 2):
+#          s= i
+#    else:
+#       print('no')
+
+# print(s)
+
+#Новая лекция
+# x,y = [int(i) for i in input().split()]
+# print(x+y)
+
+# словарь
+
+# access = {'login' : 'ivan', 'password': '123'}
+# login = input()
+# password = input()
+
+# if login == access['login'] and password == access['password'] :
+#    print('Вход разрешен')
+# Наполнить словарь
+# slovar = {}
+
+# slovar['city'] = 'Moscow'
+
+# подсчет количества
+# sp = [1,222,2,2,3,3,4,4,4,4,5]
+
+# slov = {}
+# for el in sp:
+#    if el not in slov:
+#       slov[el] = 1
+#    else:
+#       slov[el] += 1
+# print(slov)
+# print(slov.get(2))
+
+# задачи
+# 1
+# my_list = [int(i) for i in input().split(' ')]
+# print(min(my_list), max(my_list))
+
+# 2
+# import math
+# a,b,c = [int(i) for i in input().split()]
+# d = b**2 - 4 * a * c
+# if  d>0:
+#    print( (-b - math.sqrt(d)) /( 2*a))
+#    print( (-b + math.sqrt(d)) /( 2*a))
+# elif d == 0 :
+#    print( -b / (2 * a))
+# else:
+#    print('Корней нет')
+
+# 3
+# x = int(input())
+# y = int(input())
+# max_n= max(x,y)
+# count = 1
+
+# if max_n % x == 0  and max % y == 0:
+#    print(max_n)
+# elif
+#    count += 1
+#    max_n *= count
+# 4
+
+# sp = ['one', 'two', 'one', 'tho', 'three']
+# slov ={}
+# for el in sp:
+#    slov[el] = slov.get(el,0) + 1
+#    if slov[el] >1 :
+#       print( el, slov[el])
+#    else: continue
+# slovar = {}
+# slovar['hello'] = 'hi'
+# slovar['goodbye'] = 'bye'
+# slovar['list'] = 'array'
+# slovo = 'goodbye'
+# for key, value in slovar.items():
+#    if slovo == key :
+#       print(value)
+#    else:
+#       print(key)
+
+
+# print(slovar)
+# print(list(slovar.keys()))
+# print(slovar.items())
+from math import pi
+
+d =  len(input("Введите число для заданной точности числа Пи:\n").split('.')[1] ) -1
+
+print(f'число Пи с заданной точностью {d} равно {round(pi, d)}')
+
+
+
+
+
+
+
