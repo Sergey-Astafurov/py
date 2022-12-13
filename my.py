@@ -279,14 +279,85 @@
 # print(slovar)
 # print(list(slovar.keys()))
 # print(slovar.items())
-from math import pi
+# from math import pi
 
-d =  len(input("Введите число для заданной точности числа Пи:\n").split('.')[1] ) -1
+# d =  len(input("Введите число для заданной точности числа Пи:\n").split('.')[1] ) -1
 
-print(f'число Пи с заданной точностью {d} равно {round(pi, d)}')
+# print(f'число Пи с заданной точностью {d} равно {round(pi, d)}')
 
+#5 семинар
+# def func(x):
+#     return x**2
 
+# res = func(3)
+# print(res)
 
+# res = lambda x: x**2
+# print(res(3))
+
+# sp = [1,-5,-3,3,21,1]
+# def plus(x):
+#     return x>0
+
+# res =list( filter(plus,sp))
+# print(res)
+# res = list(filter(lambda x: x>0, sp))
+# print(res)
+
+# def mult(x):
+#     return x**2
+
+# res = list(map(lambda x: x**2, sp))
+# print(res)
+
+# sp = ['sa', 're', 'de', 'tre']
+# sp.sort(key=lambda a: -len(a))
+# print(sp)
+
+# sp = [i*10 for i in range(1,101) if not i%4 ]
+# print(sp)
+
+# a, b, c = [int(i) for i in input("a,b,c").split()]
+# print(a + b * c)
+
+# задачи
+
+# path = 'file23.txt'
+# data = open(path, 'r')
+# a = data.read().split()
+# a = list(map(int, a))
+# print(a)
+# data.close()
+# #1,2,3,5,6
+# for i in range(1, len(a)):
+#     if a[i] != a[i-1] + 1:
+#         print(a[i-1]+1)
+
+# 2
+# a = 5
+# b = 1
+# c = 1
+
+# def triangle(a,b,c):
+#     if a+b>c and a+c>b and c+b>a:
+#         return True
+#     else: False
+# print(triangle(a, b, c))
+
+# 3
+
+# array =list([ i ** 2 for i in range(10,100) if not i %9])
+# print(sum(array)%9 == 0)
+
+# arr = list(filter(lambda x: x%9 == 0,range(10,100) ))
+
+# res =  list(map(lambda x: x**2, arr))
+# print(sum(res)%9==0)
+
+# 4
+sp = [8,11,0,-23,140, 1]
+res = list(filter(lambda x: 100>abs(x)>10 ,sp))
+print(res)
 
 
 
