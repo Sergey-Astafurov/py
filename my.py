@@ -136,6 +136,8 @@
 
 # 3 seminar
 # list = [1,2,3,3,3,4,5,6,7,8,8,8]
+list = [i for i in  [1,2,3,3,3,4,5,6,7,8,8,8] if list]
+
 # newList = []
 # for i in list:
 #    if list.count(i) ==1:
@@ -355,10 +357,76 @@
 # print(sum(res)%9==0)
 
 # 4
-sp = [8,11,0,-23,140, 1]
-res = list(filter(lambda x: 100>abs(x)>10 ,sp))
-print(res)
+# sp = [8,11,0,-23,140, 1]
+# res = list(filter(lambda x: 100>abs(x)>10 ,sp))
+# print(res)
+
+# -----------------
+# 6 lec
+# zip
+# sp1  = [1,2,3,4]
+# sp2 = [12,13,14,15]
+# for i,j in zip(sp1,sp2):
+#     print(i,j*i)
+
+# enumerate
+# sp = ['a', 'b', 'c']
+# for i, el in enumerate(sp,10):
+#     print(i,el)
 
 
 
+# 1
+
+# num = '3 7 1 10 8'.split(' ')
+# res = list(map(lambda x: int(x )* "*", num))
+# print(("\n").join(res))
+
+# 2
+# string = []
+# numlen = int(input())
+# for i in range(numlen):
+#     str = input("введите строку")
+#     string.append(str)
+
+# string.sort(key=lambda a: len(a))
+# print(*string, sep="\n")
+
+# 3
+
+# num = [12,15,2,3,31]
+# def is_prime(a):
+#     if a % 2 == 0:
+#         return a == 2
+#     d = 3
+#     while d * d <= a and a % d != 0:
+#         d += 2
+#     return d * d > a
+
+# res = list(filter(is_prime, num))
+# print(res)
+
+# 4
+
+# sp1 = ['user1', 'user2', 'user3']
+# sp2 = [4,5,6,7,8]
+# sp3 = [111,123,334]
+
+# res = list(zip(sp1,sp2,sp3))
+# print(res)
+
+# result = list(zip(*res))
+# print(result)
+
+# 5
+st = [ 'Ехал грека через реку', 'Видит Грека в речке рак', 'Сунул в реку руку Грека', 'Рак за руку Греку цап']
+st_num = list(enumerate(st))
+res = []
+for s in st:
+    res.extend(s.split())
+
+min = list(filter(lambda x: x.istitle(), res))
+en = list(enumerate(min))
+en.sort(key= lambda x: x[1])
+print(en)
 

@@ -20,6 +20,6 @@
 # print(list)
 # Кортежи неизменяемый список
 
-a=(3,4,5)
-for item in a:
-   print(item)
+# a=(3,4,5)
+# for item in a:
+#    print(item)
