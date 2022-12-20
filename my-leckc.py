@@ -6,7 +6,7 @@
 #    print(line)
 # data.close()
 
-#Фибоначи
+# Фибоначи
 # def fib(n):
 #    if n in [1,2]:
 #       return 1
@@ -23,3 +23,29 @@
 # a=(3,4,5)
 # for item in a:
 #    print(item)
+
+# От простого  к сложному
+def sum(a, b): return a+b
+
+# ввод чисел
+# вычисление
+# печать примера
+# и ответа
+
+
+x = 0
+y = 0
+
+
+def init(a, b):
+    global x
+    global y
+    x = a
+    y = b
+
+
+def sum():
+    return x+y
+
+
+

@@ -419,14 +419,17 @@ list = [i for i in  [1,2,3,3,3,4,5,6,7,8,8,8] if list]
 # print(result)
 
 # 5
-st = [ 'Ехал грека через реку', 'Видит Грека в речке рак', 'Сунул в реку руку Грека', 'Рак за руку Греку цап']
-st_num = list(enumerate(st))
-res = []
-for s in st:
-    res.extend(s.split())
+# st = [ 'Ехал грека через реку', 'Видит Грека в речке рак', 'Сунул в реку руку Грека', 'Рак за руку Греку цап']
+# st_num = list(enumerate(st))
+# res = []
+# for s in st:
+#     res.extend(s.split())
 
-min = list(filter(lambda x: x.istitle(), res))
-en = list(enumerate(min))
-en.sort(key= lambda x: x[1])
-print(en)
+# min = list(filter(lambda x: x.istitle(), res))
+# en = list(enumerate(min))
+# en.sort(key= lambda x: x[1])
+# print(en)
 
+
+sum = lambda a,b: a+b;
+print(sum(1,5))
